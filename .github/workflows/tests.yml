@@ -1,0 +1,23 @@
+name: Tests
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  test-bot:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+      - name: Tap syntax check
+        run: brew test-bot --only-tap-syntax
+      - name: Audit formulae
+        run: |
+          for formula in Formula/*.rb; do
+            [ -e "$formula" ] || exit 0
+            name="$(basename "$formula" .rb)"
+            brew audit --strict "eulegang/tap/$name"
+          done
