@@ -7,8 +7,6 @@ class GitRelbranch < Formula
   sha256 "ff33af35bb154d87fcf63bffcb02ce1945f30ead833315afccfd4f0220a0b398"
   license "MIT"
 
-  depends_on "cmake" => :build
-  depends_on "pkgconf" => :build
   depends_on "rust" => :build
   depends_on "git"
 
