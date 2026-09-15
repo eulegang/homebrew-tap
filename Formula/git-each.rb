@@ -3,8 +3,8 @@
 class GitEach < Formula
   desc "Broadcast commands to many local Git repositories"
   homepage "https://github.com/eulegang/git-each"
-  url "https://github.com/eulegang/git-each/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "aa1495ad17756c649b212757755ffd91f927b81beff89ad7a2800067b737252e"
+  url "https://github.com/eulegang/git-each/archive/refs/tags/v1.1.0.tar.gz"
+  sha256 "33cf07c018c7137cc9d27a00ae4063948bd1e58e056fb17b097f80be8f6a7e94"
   license "MIT"
 
   depends_on "cmake" => :build
