@@ -15,6 +15,11 @@ For a formula in this repository:
 brew install eulegang/tap/<formula>
 ```
 
+## Pi prompt template
+
+From this repository, use `/update-formula <formula> [version]` to update a formula to a specified version or the latest stable release.
+Pi loads the project template from `.pi/prompts/update-formula.md` after project trust is granted; run `/reload` if Pi is already open.
+
 ## Development
 
 Create a new formula under `Formula/<name>.rb`.

@@ -3,9 +3,9 @@
 class GitGud < Formula
   desc "Install Git hooks for repository automation"
   homepage "https://github.com/eulegang/git-gud"
-  url "https://github.com/eulegang/git-gud/archive/cb77b31957d3716200624457822527b0423fcd3b.tar.gz"
-  version "0.1.1"
-  sha256 "130eaee6bdb31d6f34c51047867d495c3f17627c792bfaf0228a9172d5d15194"
+  url "https://github.com/eulegang/git-gud/archive/a9f1f5c34f313ef39a144f5d187ee09dc38ca303.tar.gz"
+  version "0.2.0"
+  sha256 "10ba3f33f23c008529d9bd03fb9f072eb71a7da2aea26a507f1169f5a36c73f1"
   license :cannot_represent
 
   depends_on "cmake" => :build
